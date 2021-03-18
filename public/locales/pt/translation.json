@@ -1,0 +1,18 @@
+{
+  "bio-description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+  "contact-description": "Entre em contato caso tenha interesse em conversar comigo.",
+  "contact": "CONTATO",
+  "experience": "Experiências",
+  "feb": "Fev",
+  "feedback-email-negative": "Ocorreu um erro ao enviar o email!",
+  "feedback-email-positive": "E-mail enviado com sucesso!",
+  "invalidEmail": "Por favor, digite um e-mail válido!",
+  "invalidName": "Por favor, digite um nome válido!",
+  "message": "Mensagem",
+  "name": "Nome",
+  "oct": "Out",
+  "present": "Momento",
+  "projectManager": "Diretor de Projetos",
+  "send": "Enviar",
+  "skills": "Habilidades"
+}

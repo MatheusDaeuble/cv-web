@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import ComputerContainer from './containers/Computer';
+import DeviceContainer from './containers/Device';
+import useWindowDimensions from './hooks/useDimensionsHook';
+import withNavigationContext from './context/NavigationContext';
+import withFeedbackContext from './context/FeedbackContext';
+import withModalContext from './context/ModalContext';
+import GlobalStyle from './styles/global';
 
-function App() {
+const App = () => {
+  const { width } = useWindowDimensions();
+  const isMobile = width < 900;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      {isMobile ? <DeviceContainer /> : <ComputerContainer />}
+    </>
   );
-}
+};
 
-export default App;
+export default withModalContext(
+  withFeedbackContext(withNavigationContext(App))
+);
