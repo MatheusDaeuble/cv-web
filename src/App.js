@@ -10,13 +10,12 @@ import withModalContext from './context/ModalContext';
 import GlobalStyle from './styles/global';
 
 const App = () => {
-  const { width } = useWindowDimensions();
-  const isMobile = width < 900;
 
   return (
     <>
       <GlobalStyle />
-      {isMobile ? <DeviceContainer /> : <ComputerContainer />}
+      <DeviceContainer />
+      <ComputerContainer />
     </>
   );
 };

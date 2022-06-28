@@ -1,33 +1,30 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-xhr-backend';
+import pt from './locales/pt/translation.json';
+import en from './locales/en/translation.json';
 
-const getInitialLanguage = () => {
-  try {
-    const item = window.localStorage.getItem('language');
-    return item ? JSON.parse(item) : 'pt';
-  } catch {
-    return 'pt';
-  }
+// the translations
+// (tip move them in a JSON file and import them,
+// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+const resources = {
+  en: {
+    translation: en,
+  },
+  pt: {
+    translation: pt,
+  },
 };
 
 i18n
-  // learn more: https://github.com/i18next/i18next-xhr-backend
-  .use(Backend)
-  // connect with React
-  .use(initReactI18next)
-  // for all options read: https://www.i18next.com/overview/configuration-options
+  .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    debug: true,
-    lng: getInitialLanguage(),
-    fallbackLng: 'pt',
-    whitelist: ['pt', 'en'],
+    resources,
+    lng: 'pt', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
+    // if you're using a language detector, do not define the lng option
 
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
-    backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      escapeValue: false, // react already safes from xss
     },
   });
 

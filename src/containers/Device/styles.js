@@ -6,6 +6,11 @@ export const Container = styled.div`
   max-width: 100%;
   overflow-x: hidden;
   background: ${colors.white};
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+
 `;
 
 export const SafeArea = styled.div`

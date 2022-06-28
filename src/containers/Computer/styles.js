@@ -10,6 +10,10 @@ export const Background = styled.div`
   min-height: 100vh;
   background-color: ${colors.secondary};
   justify-content: space-between;
+
+  @media (max-width: 899px) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`
