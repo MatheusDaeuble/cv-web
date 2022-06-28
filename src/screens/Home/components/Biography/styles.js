@@ -13,7 +13,7 @@ export const Avatar = styled.img`
 export const BioContainer = styled.div`
   display: flex;
   flex: 1;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 `;
 
 export const IconsContainer = styled.div`

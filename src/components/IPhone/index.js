@@ -10,7 +10,7 @@ const Device = () => {
   const { ScreenComponent, header } = useContext(NavigationContext);
   const { height } = useDimensionsHook();
 
-  const ratioH = useMemo(() => height / 1.1, [height]);
+  const ratioH = useMemo(() => height / 2, [height]);
 
   return (
     <Phone height={ratioH}>

@@ -7,7 +7,7 @@ const Experiences = () => {
   const { t } = useTranslation();
   return (
     <SectionExperiences>
-      <TitleExperiences>{t('experience')}</TitleExperiences>
+      <TitleExperiences>Experiências</TitleExperiences>
       <Timeline />
     </SectionExperiences>
   );

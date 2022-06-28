@@ -2,7 +2,7 @@
 import React from 'react';
 import { GrGithub, GrInstagram, GrLinkedin, GrFacebook } from 'react-icons/gr';
 import { useTranslation } from 'react-i18next';
-import avatar from '~/assets/avatar.jpeg';
+import avatar from '~/assets/avatar.png';
 
 import { colors } from '~/styles';
 
@@ -53,11 +53,11 @@ const Biography = () => {
           </IconsContainer>
         </BioTextContainer>
       </BioContainer>
-      <Description>
+      {/* <Description>
         Profissional atuando no setor de criação e desenvolvimento há quatro
         anos em diversos projetos. Sempre buscando aprender e encarar novos
         desafios.
-      </Description>
+      </Description> */}
     </SectionBio>
   );
 };

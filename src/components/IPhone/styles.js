@@ -5,13 +5,14 @@ const ratioPhone = 347 / 696;
 const ratioNotch = 156.75 / 696;
 
 export const Phone = styled.div`
+  margin-top: 24px;
   position: relative;
   display: flex;
-  width: ${({ height }) => height * ratioPhone}px;
-  height: ${({ height }) => height}px;
+  width: 162.5316091954023px;
+  height: 550px;
   max-height: 696px;
   max-width: 347px;
-  min-height: 592.6px;
+  min-height: 550px;
   min-width: 296px;
   padding-top: 1px;
   background-color: #120d30;

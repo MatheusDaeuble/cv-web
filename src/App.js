@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      {isMobile ? <DeviceContainer /> : <ComputerContainer />}
+      <ComputerContainer />
     </>
   );
 };

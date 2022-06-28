@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useContext } from 'react';
+import React, { useState, useMemo, useContext, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
 import { BsPerson, BsEnvelope as EmailIcon } from 'react-icons/bs';
@@ -21,6 +21,14 @@ const emptyInput = { value: '', error: '' };
 
 const ContactScreen = () => {
   const { showFeedback } = useContext(FeedbackContext);
+
+  const [a, setA] = useState('Teste');
+
+  useEffect(() => {
+    if (a !== 'hehe') {
+      console.log('hehe');
+    }
+  }, [a]);
 
   const { t } = useTranslation();
 
