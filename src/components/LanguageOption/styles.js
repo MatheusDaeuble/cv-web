@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors } from '~/styles';
 
 const shadow = `
+  -webkit-filter: opacity(1);
   box-shadow: rgba(14, 30, 37, 0.18) 0px 2px 4px 0px,
   rgba(14, 30, 37, 0.08) 0px 2px 16px 0px
   `;
@@ -21,6 +22,7 @@ export const Flag = styled.img`
 export const ContainerList = styled.div`
   padding: 2px 7px;
   margin: 5px 0;
+  -webkit-filter: opacity(1);
   box-shadow: rgba(14, 30, 37, 0.18) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.08) 0px 2px 16px 0px;
   border-radius: 5px;

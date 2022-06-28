@@ -42,6 +42,35 @@ export const Time = styled.div`
   right: 22px;
 `;
 
+export const QrCode = styled.div`
+  z-index: 9999999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 400;
+  background: ${colors.darkTransparent};
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    margin-top: 22px;
+    height: 120px;
+  }
+
+  p {
+    color: ${colors.white};
+    margin-top: 5px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+`;
+
+
 export const Notch = styled.div`
   position: absolute;
   top: 12px;

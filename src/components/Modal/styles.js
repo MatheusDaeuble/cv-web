@@ -41,6 +41,7 @@ export const Container = styled.div`
   z-index: 1;
   position: relative;
   flex-direction: column;
+  -webkit-filter: opacity(1);
   box-shadow: rgba(14, 30, 37, 0.18) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.08) 0px 2px 16px 0px;
   align-items: center;
@@ -65,6 +66,7 @@ export const Logo = styled.img`
   margin-top: -55px;
   width: 70px;
   border-radius: 40px;
+  -webkit-filter: opacity(1);
   box-shadow: 1px 1px 3px 1px ${colors.gray};
   background-color: ${colors.white};
   touch-action: manipulation;

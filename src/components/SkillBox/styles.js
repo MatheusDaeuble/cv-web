@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colors } from '~/styles';
 
 export const Box = styled.div`
+  -webkit-filter: opacity(1);
   box-shadow: rgba(14, 30, 37, 0.18) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.08) 0px 2px 16px 0px;
   display: flex;

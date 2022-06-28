@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   display: flex;
+  -webkit-filter: opacity(1);
   box-shadow: 0px 0px 3px 0px ${colors.gray};
   width: 100%;
   height: ${TAB_BAR_HEIGHT}px;

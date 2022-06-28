@@ -12,6 +12,7 @@ export const Container = styled.div`
     disable ? colors.light : colors.secondary};
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+  -webkit-filter: opacity(1);
 `;
 
 export const Label = styled.div`

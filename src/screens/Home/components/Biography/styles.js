@@ -7,6 +7,7 @@ export const Avatar = styled.img`
   margin-top: -50px;
   border-radius: 40px;
   box-shadow: 1px 1px 3px 1px ${colors.gray};
+  -webkit-filter: opacity(1);
   touch-action: manipulation;
 `;
 
@@ -28,7 +29,6 @@ export const BioTextContainer = styled.div`
   text-align: center;
   position: relative;
   margin-left: 10px;
-  margin-top: 3px;
 `;
 
 export const Name = styled.div`
@@ -62,6 +62,7 @@ export const SectionBio = styled.div`
   flex-direction: column;
   margin: 55px 0px 0px;
   padding: 15px 15px 10px;
+  -webkit-filter: opacity(1);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 10px;

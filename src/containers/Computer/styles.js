@@ -60,6 +60,7 @@ export const Background = styled.div`
     background: #e9e9ea;
     padding: 2px;
     margin-top: -2px;
+    -webkit-filter: opacity(1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
@@ -119,6 +120,7 @@ export const ProfileContainer = styled.div`
   flex-direction: row;
   background: white;
   border-radius: 10px;
+  -webkit-filter: opacity(1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   img {
@@ -234,6 +236,7 @@ export const ProfileContainerOld = styled.div`
   display: flex;
   background: white;
   border-radius: 10px;
+  -webkit-filter: opacity(1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   img {

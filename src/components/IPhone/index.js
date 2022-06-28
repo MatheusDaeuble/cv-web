@@ -4,7 +4,8 @@ import { NavigationContext } from '~/context/NavigationContext';
 import useDimensionsHook from '~/hooks/useDimensionsHook';
 import Clock from '~/components/Clock';
 import TabBar from '~/components/TabBar';
-import { Phone, Notch, ScreenWrapper, Header } from './styles';
+import { Phone, Notch, ScreenWrapper, Header, QrCode } from './styles';
+import qrCode from '~/assets/qr-code.png'
 
 const Device = () => {
   const { ScreenComponent, header } = useContext(NavigationContext);
@@ -15,6 +16,10 @@ const Device = () => {
   return (
     <Phone height={ratioH}>
       <ScreenWrapper height={height / 4} headerColor={header.backgroundColor}>
+        <QrCode>
+          <img src={qrCode}/>
+          <p>Leia-me</p>
+        </QrCode>
         <Header />
         <Clock />
         <ScrollContainer className='screen' horizontal={false}>
