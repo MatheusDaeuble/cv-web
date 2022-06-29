@@ -59,6 +59,7 @@ export const Background = styled.div`
   .browser-frame {
     background: #e9e9ea;
     padding: 2px;
+    padding-bottom: 0px;
     margin-top: -2px;
     -webkit-filter: opacity(1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -70,6 +71,7 @@ export const Container = styled.div`
   position: relative;
   width: 100%;
   padding: 12px;
+  padding-bottom: 0px;
   padding-top: 4px;
   max-width: 1750px;
   border-radius: 5px;
