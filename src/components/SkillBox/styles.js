@@ -27,4 +27,6 @@ export const Icon = styled.img`
 export const Label = styled.div`
   font-size: 12px;
   color: ${colors.darker};
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 `;

@@ -40,7 +40,6 @@ const TsIcon = 'https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png';
 
 const JestIcon = 'https://iconape.com/wp-content/png_logo_vector/jest-logo.png'
 
-
 const Timeline = () => {
   const { t } = useTranslation();
 
@@ -52,7 +51,7 @@ const Timeline = () => {
         role: 'Tech Leader',
         company: 'Itegra',
         period: `2021-2022`,
-        description: "Responsável por liderar equipes atribuindo tarefas, repassando conhecimento, buscando adoção de boas práticas para melhoria continua no processo de desenvolvimento e rendimento da equipe.",
+        description: "Responsável por atribuir/revisar tarefas, repassar conhecimento, adotar boas práticas e novas tecnologias para melhoria continua no processo de desenvolvimento e rendimento da equipe.",
         icon: logos.skilopay,
         skills: [TsIcon, ReactIcon, NodeJsIcon, JestIcon],
       },
@@ -68,7 +67,7 @@ const Timeline = () => {
         role: 'Mobile Development',
         company: 'NwSoft',
         period: `2019-2020`,
-        description: "Atuei na migração de uma solução de rastreamento de carros que originalmente era um aplicativo nativo para cross-platform, utilizando a tecnologia React Native.",
+        description: "Atuei na migração de uma solução de rastreamento de carros que originalmente tratava-se de um aplicativo nativo para uma aplicação cross-platform, utilizando a tecnologia React Native.",
         icon: logos.nwSoft,
         skills: [JavascriptIcon,  ReactIcon, JestIcon],
       },
@@ -76,7 +75,7 @@ const Timeline = () => {
         role: 'Full-stack Development',
         company: 'Itegra',
         period: `2017-2019`,
-        description: "Por tratar-se de uma fabrica de softwares, atuei na criação de diversos produtos passando por todas as etapas do desenvolvimento, utilizando tecnologias como: React, Python, NodeJS e Google Cloud.",
+        description: "Por tratar-se de uma fabrica de softwares, atuei na criação de produtos variados passando por todas as etapas do desenvolvimento, utilizando tecnologias como: React, Python, NodeJS e Google Cloud.",
         icon: logos.itegra,
         skills: [ReactIcon,PythonIcon ,FlaskLogo],
       },
@@ -95,7 +94,7 @@ const Timeline = () => {
               <Line isVisible={index < experiences.length - 1} />
             </IconContainer>
             <InfoContainer>
-            <p style={{display: 'flex', whiteSpace: 'nowarp'}}>
+            <p style={{display: 'flex', whiteSpace: 'nowarp', marginTop: 0}}>
               <Role style={{whiteSpace: 'nowarp'}}>{role} - {company}</Role>
               {skills.map((url)=>  <img src={url} style={{height: 20, width: 20, borderRadius: 3 , marginTop: -4, marginLeft: 4}} />)}
               </p>

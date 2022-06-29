@@ -17,7 +17,7 @@ export const CollegeContainer = styled.div`
   .college {
     font-size: 16px ;
     margin-top: -3px;
-
+    color: ${colors.darkest};
   }
 
   .course {
@@ -36,7 +36,7 @@ export const CollegeContainer = styled.div`
   }
 
   .period {
-
+    color: ${colors.darkest};
   }
 
   .city {
@@ -154,7 +154,7 @@ export const ProfileContainer = styled.div`
     .title {
       font-size: 22px;
       color: ${colors.darker};
-      font-weight: 500;
+      font-weight: 400;
       font-family: 'Poppins', sans-serif;
       b {
         font-weight: 600 !important;
@@ -201,9 +201,9 @@ export const ProfileContainer = styled.div`
   }
 
   .role {
-    color: ${colors.darker};
+    color: ${colors.darkest};
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Poppins', sans-serif;
     /* margin-top: 4px; */
   }

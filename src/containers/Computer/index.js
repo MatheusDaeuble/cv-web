@@ -90,9 +90,8 @@ const ComputerContainer = () => (
             <div className='line' />
             <p className='role'>Tech Leader</p>
             <p className='description'>
-              Profissional atuando no setor de criação e desenvolvimento há
-              quatro anos em diversos projetos. Sempre buscando aprender e
-              encarar novos desafios.
+              Apaixonando por tecnologia, atuando na área de desenvolvimento há 
+              mais de quatro anos, sempre buscando novos desafios que me mantenham em constante aprendizado.
             </p>
           </div>
         </ProfileContainer>
