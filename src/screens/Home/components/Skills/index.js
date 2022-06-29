@@ -20,8 +20,11 @@ const data = {
 
 const ReduxIcon =
   'https://bognarjunior.files.wordpress.com/2018/08/download.png?w=256';
+
+  const NodeJsIcon =
+  'https://cdn-icons-png.flaticon.com/512/5968/5968322.png';
 const FlaskLogo =
-  'https://e7.pngegg.com/pngimages/654/56/png-clipart-flask-web-framework-python-software-framework-jinja-flask-miscellaneous-monochrome-thumbnail.png';
+  'https://flask-training-courses.uk/images/flask-logo.png';
 
 const GraphqlIcon =
   'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png';
@@ -41,6 +44,9 @@ const CssIcon =
 
 const TsIcon = 'https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png';
 
+const JestIcon = 'https://iconape.com/wp-content/png_logo_vector/jest-logo.png'
+
+
 const Skills = () => {
   const { t } = useTranslation();
 
@@ -57,14 +63,16 @@ const Skills = () => {
         style={{ display: 'flex', margin: 0 }}
         horizontal>
         <SkillBox margin={5} label='React.js' icon={ReactIcon} />
-        <SkillBox margin={5} label='Python' icon={PythonIcon} />
         <SkillBox margin={5} label='Typescript' icon={TsIcon} />
+        <SkillBox margin={5} label='Node.js' icon={NodeJsIcon} />
         <SkillBox margin={5} label='Javascript' icon={JavascriptIcon} />
-        <SkillBox margin={5} label='GraphQL' icon={GraphqlIcon} />
-        <SkillBox margin={5} label='Flask' icon={FlaskLogo} />
-        <SkillBox margin={5} label='Redux' icon={ReduxIcon} />
         <SkillBox margin={5} label='HTML5' icon={HtmlIcon} />
         <SkillBox margin={5} label='CSS3' icon={CssIcon} />
+        <SkillBox margin={5} label='Python' icon={PythonIcon} />
+        <SkillBox margin={5} label='GraphQL' icon={GraphqlIcon} />
+        <SkillBox margin={5} label='Redux' icon={ReduxIcon} />
+        <SkillBox margin={5} label='Flask' icon={FlaskLogo} />
+        <SkillBox margin={5} label='Jest' icon={JestIcon} />
       </ScrollContainer>
     </SectionSkills>
   );

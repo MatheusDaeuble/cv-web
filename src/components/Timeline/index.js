@@ -23,7 +23,7 @@ const Timeline = () => {
   const experiences = useMemo(
     () => [
       {
-        id: COMPANY.ITEGRA,
+        id: COMPANY.ITEGRA2,
         role: 'Tech Leader',
         company: 'Itegra',
         period: `Mar 2021 - ${t('present')}`,

@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
   padding: 0px 10px;
   margin: 6px 0;
   height: 55px;
-  background-color: ${colors.white};
+  background-color: #fff;
   border-radius: 8px;
   border-width: 0.1px;
   border-color: ${({ hasError }) =>

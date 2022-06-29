@@ -3,7 +3,7 @@ import { Box, Icon, Label } from './styles';
 
 const SkillBox = ({ icon, label, margin = 0 }) => (
   <Box margin={margin}>
-    <a href='http://google.com.br'>
+    <a>
       <Icon src={icon} />
     </a>
     <Label>{label}</Label>

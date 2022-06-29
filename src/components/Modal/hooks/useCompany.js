@@ -4,6 +4,7 @@ import { colors } from '~/styles';
 import logos from '~/assets/logos';
 
 export const COMPANY = {
+  ITEGRA2: 'ITEGRA2',
   SKILOPAY: 'SKILOPAY',
   NW_SOFT: 'NW_SOFT',
   ITEGRA: 'ITEGRA',
@@ -15,11 +16,45 @@ const useCompany = name => {
 
   const company = useMemo(() => {
     return {
+      [COMPANY.ITEGRA2]: {
+        name: 'Itegra',
+        logo: logos.itegra,
+        description:
+          'Responsável por atribuir/revisar tarefas, repassar conhecimento, adotar boas práticas e novas tecnologias para melhoria continua no processo de desenvolvimento e rendimento da equipe.',
+        social: {
+          facebook: 'https://www.facebook.com/itegra/',
+          instagram: 'https://www.instagram.com/itegratecnologia/',
+          linkedin: 'https://br.linkedin.com/company/itegra',
+        },
+        responsibilities: [
+          'Adotar boas práticas e novas tecnologias',
+          'Ajudar membros a desenvolverem suas habilidades.',
+          'Revisar códigos (PR).',
+        ],
+        stack: [
+          {
+            label: 'React.js',
+            color: '#5ED4F4',
+          },
+          {
+            label: 'ReactNative',
+            color: '#3075C1',
+          },
+          {
+            label: 'Node.js',
+            color: '#54A244',
+          },
+          {
+            label: 'Jest',
+            color: '#DB0194',
+          },
+        ],
+      },
       [COMPANY.SKILOPAY]: {
         name: 'Skilopay',
         logo: logos.skilopay,
         description:
-          'A Skilopay é uma fintech brasileira com time 100% remoto, onde atuo principalmente no produto mobile.',
+          'Skilopay trata-se de uma fintech onde atuei tanto no desenvolvimento de interfaces como na construção do Design System utilizando a metodologia de Atomic Design.',
         social: {
           facebook: 'https://www.facebook.com/skilopay/',
           instagram: 'https://www.instagram.com/skilopay/',
@@ -27,8 +62,8 @@ const useCompany = name => {
         },
         responsibilities: [
           'Desenvolver soluções de alta qualidade.',
-          'Manutenção e evolução do código.',
-          'Publicar o apps nas respectivas stores.',
+          'Criação e manutenção do Design System',
+          'Publicar aplicativos nas lojas.',
           'Revisar códigos (PR).',
         ],
         stack: [
@@ -50,7 +85,7 @@ const useCompany = name => {
         name: 'NwSoft',
         logo: logos.nwSoft,
         description:
-          'Na NwSoft atuei na reconstrução do novo aplicativo GPMTrack, uma solução para rastreio de frotas, contando com diversas funcionalidades.',
+          'Atuei na migração de uma solução de rastreamento de carros que originalmente tratava-se de um aplicativo nativo para uma aplicação cross-platform, utilizando a tecnologia React Native.',
         social: {
           facebook: 'https://www.facebook.com/nwsoft/',
           instagram: 'https://www.instagram.com/nwsoft/?hl=pt',
@@ -59,7 +94,7 @@ const useCompany = name => {
         responsibilities: [
           'Desenvolver novas funcionalidades.',
           'Migração para novas tecnologias.',
-          'Criação de testes unitários.',
+          'Criação de testes automatizados.',
         ],
         stack: [
           {
@@ -80,7 +115,7 @@ const useCompany = name => {
         name: 'Itegra',
         logo: logos.itegra,
         description:
-          'Na Itegra trabalhei na criação de produtos inovadores, atuando em todos os setores e etapas de desenvolvimento.',
+          'Por tratar-se de uma fabrica de softwares, atuei na criação de produtos variados passando por todas as etapas do desenvolvimento.',
         social: {
           facebook: 'https://www.facebook.com/itegra/',
           instagram: 'https://www.instagram.com/itegratecnologia/',

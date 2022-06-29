@@ -3,6 +3,14 @@ import React from 'react';
 import { GrGithub, GrInstagram, GrLinkedin, GrFacebook } from 'react-icons/gr';
 import { useTranslation } from 'react-i18next';
 import avatar from '~/assets/avatar.jpeg';
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoFacebook,
+  IoIosMail,
+} from 'react-icons/io';
+
 
 import { colors } from '~/styles';
 
@@ -20,7 +28,7 @@ import {
 
 const Biography = () => {
   const iconProps = {
-    size: 17,
+    size: 22,
     color: colors.darker,
     opacity: 0.8,
   };
@@ -33,30 +41,33 @@ const Biography = () => {
       <BioContainer>
         <BioTextContainer>
           <Name>Matheus Daeuble</Name>
-          <Role>Full-stack Development</Role>
+          <Role>Teach Leader</Role>
           {/* <Location>Fortaleza, Brasil</Location> */}
           <IconsContainer>
             <a href='https://github.com/MatheusDaeuble' target='_blank'>
-              <GrGithub {...iconProps} />
+              <IoLogoGithub {...iconProps} />
             </a>
             <a
               href='https://www.linkedin.com/in/matheusdaeuble/'
               target='_blank'>
-              <GrLinkedin {...iconProps} />
+              <IoLogoLinkedin {...iconProps} />
             </a>
-            <a href='https://www.instagram.com/matheusdaeuble/' target='_blank'>
-              <GrInstagram {...iconProps} />
+            <a href='mailto:matheusdaeuble@gmail.com' target='_blank'>
+              <IoIosMail {...iconProps} />
             </a>
             <a href='https://www.facebook.com/MatheusDaeuble/' target='_blank'>
-              <GrFacebook {...iconProps} />
+              <IoLogoFacebook {...iconProps} />
+            </a>
+            <a href='https://www.instagram.com/matheusdaeuble/' target='_blank'>
+              <IoLogoInstagram {...iconProps} />
             </a>
           </IconsContainer>
         </BioTextContainer>
       </BioContainer>
       <Description>
-        Profissional atuando no setor de criação e desenvolvimento há quatro
-        anos em diversos projetos. Sempre buscando aprender e encarar novos
-        desafios.
+        Apaixonando por tecnologia, atuando na área de desenvolvimento há mais
+        de quatro anos, sempre buscando novos desafios que me mantenham em
+        constante aprendizado.
       </Description>
     </SectionBio>
   );
