@@ -14,6 +14,10 @@ export const Container = styled.div`
     white 10%,
     white 50%
   );
+
+  @media (max-width: 899px) {
+   padding-top: 24px;
+  }
 `;
 
 export const SafeArea = styled.div`

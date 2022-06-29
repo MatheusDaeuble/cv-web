@@ -42,7 +42,7 @@ const ContactScreen = () => {
   };
 
   // eslint-disable-next-line no-bitwise
-  const validateForm = () => validateName() & validateEmail();
+  const validateForm = () => validateEmail();
 
   const disableButton = useMemo(
     () => name.error || email.error || !name.value || !email.value || !message,
@@ -115,7 +115,7 @@ const ContactScreen = () => {
           label={t('send')}
           onClick={onButtonsPress}
           loading={loading}
-          disable={loading}
+          disable={loading || !name.value || !email.value || !message}
         />
         <SafeArea />
       </Container>

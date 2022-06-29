@@ -31,12 +31,22 @@ const TabBar = ({ margin = 0, isVisible = true }) => {
   ];
 
   const renderIcons = () => {
-    return options.map((item, index) =>
-      React.cloneElement(item[index === screen], {
-        key: index.toString(),
-        onClick: () => navigate(index),
-      })
-    );
+    return options.map((item, index) => (
+      <div
+      onClick={()=>navigate(index)}
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        {React.cloneElement(item[index === screen], {
+          key: index.toString(),
+          style: { cursor: 'pointer'}
+        })}
+      </div>
+    ));
   };
 
   if (!isVisible) return null;

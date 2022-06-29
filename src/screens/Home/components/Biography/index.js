@@ -65,9 +65,7 @@ const Biography = () => {
         </BioTextContainer>
       </BioContainer>
       <Description>
-        Apaixonando por tecnologia, atuando na área de desenvolvimento há mais
-        de quatro anos, sempre buscando novos desafios que me mantenham em
-        constante aprendizado.
+        {t('bio-description')}
       </Description>
     </SectionBio>
   );

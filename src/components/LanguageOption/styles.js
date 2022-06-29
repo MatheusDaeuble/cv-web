@@ -35,6 +35,11 @@ export const FlagContainer = styled.div`
   width: 30px;
   align-items: center;
   padding: 4px;
+
+  @media (max-width: 899px) {
+   margin-top: 20px;
+  }
+
   border-radius: 5px;
   background: ${({ isOpen }) => (isOpen ? colors.white : colors.white)};
   touch-action: manipulation;

@@ -8,6 +8,13 @@ export const Avatar = styled.img`
   border-radius: 40px;
   box-shadow: 1px 1px 3px 1px ${colors.gray};
   touch-action: manipulation;
+
+  @media (max-width: 899px) {
+    height: 100px;
+    width: 100px;
+    margin-top: -65px;
+    border-radius: 50px;
+  }
 `;
 
 export const BioContainer = styled.div`
@@ -51,7 +58,7 @@ export const Location = styled.div`
   color: #34abfa;
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   color: ${colors.darker};
   font-size: 13px;
 `;
