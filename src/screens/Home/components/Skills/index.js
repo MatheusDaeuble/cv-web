@@ -58,16 +58,16 @@ const Skills = () => {
         }}
         style={{ display: 'flex', margin: 0 }}
         horizontal>
-        <SkillBox margin={5} label='React.js' icon={ReactIcon} />
-        <SkillBox margin={5} label='Typescript' icon={TsIcon} />
-        <SkillBox margin={5} label='Node.js' icon={NodeJsIcon} />
-        <SkillBox margin={5} label='Javascript' icon={JavascriptIcon} />
-        <SkillBox margin={5} label='HTML5' icon={HtmlIcon} />
-        <SkillBox margin={5} label='CSS3' icon={CssIcon} />
-        <SkillBox margin={5} label='GraphQL' icon={GraphqlIcon} />
-        <SkillBox margin={5} label='Python' icon={PythonIcon} />
-        <SkillBox margin={5} label='Flask' icon={FlaskLogo} />
-        <SkillBox margin={5} label='Jest' icon={JestIcon} />
+        <SkillBox margin={5} labelSize={10} label='React.js' icon={ReactIcon} />
+        <SkillBox margin={5} labelSize={10} label='Typescript' icon={TsIcon} />
+        <SkillBox margin={5} labelSize={10} label='Node.js' icon={NodeJsIcon} />
+        <SkillBox margin={5} labelSize={10} label='Javascript' icon={JavascriptIcon} />
+        <SkillBox margin={5} labelSize={10} label='HTML5' icon={HtmlIcon} />
+        <SkillBox margin={5} labelSize={10} label='CSS3' icon={CssIcon} />
+        <SkillBox margin={5} labelSize={10} label='GraphQL' icon={GraphqlIcon} />
+        <SkillBox margin={5} labelSize={10} label='Python' icon={PythonIcon} />
+        <SkillBox margin={5} labelSize={10} label='Flask' icon={FlaskLogo} />
+        <SkillBox margin={5} labelSize={10} label='Jest' icon={JestIcon} />
       </ScrollContainer>
     </SectionSkills>
   );
