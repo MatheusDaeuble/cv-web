@@ -3,6 +3,12 @@ import React from 'react';
 import { GrGithub, GrInstagram, GrLinkedin, GrFacebook } from 'react-icons/gr';
 import { useTranslation } from 'react-i18next';
 import avatar from '~/assets/avatar.jpeg';
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoIosMail,
+} from 'react-icons/io';
 
 import { colors } from '~/styles';
 
@@ -36,20 +42,24 @@ const Biography = () => {
           <Role>Full-stack Development</Role>
           {/* <Location>Fortaleza, Brasil</Location> */}
           <IconsContainer>
-            <a href='https://github.com/MatheusDaeuble' target='_blank'>
-              <GrGithub {...iconProps} />
-            </a>
-            <a
-              href='https://www.linkedin.com/in/matheusdaeuble/'
-              target='_blank'>
-              <GrLinkedin {...iconProps} />
-            </a>
-            <a href='https://www.instagram.com/matheusdaeuble/' target='_blank'>
-              <GrInstagram {...iconProps} />
-            </a>
-            <a href='https://www.facebook.com/MatheusDaeuble/' target='_blank'>
-              <GrFacebook {...iconProps} />
-            </a>
+          <a href='https://github.com/MatheusDaeuble' target='_blank'>
+                  <IoLogoGithub size={24} color={colors.dark} />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/matheusdaeuble/'
+                  target='_blank'>
+                  <IoLogoLinkedin size={24} color={colors.dark} />
+                </a>
+                <a
+                  href='mailto:matheusdaeuble@gmail.com'
+                  target='_blank'>
+                  <IoIosMail size={25} color={colors.dark} />
+                </a>
+                <a
+                  href='https://www.instagram.com/matheusdaeuble/'
+                  target='_blank'>
+                  <IoLogoInstagram size={24} color={colors.dark} />
+                </a>
           </IconsContainer>
         </BioTextContainer>
       </BioContainer>

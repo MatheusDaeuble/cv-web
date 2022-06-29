@@ -58,7 +58,7 @@ export const Background = styled.div`
   justify-content: space-between;
 
   .browser-frame__top {
-    padding: 0px 32px 0px 32px;
+    padding: 0px 24px 0px 24px;
   }
 
   .browser-frame {

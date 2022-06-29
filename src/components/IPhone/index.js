@@ -18,7 +18,7 @@ const Device = () => {
       <ScreenWrapper height={height / 4} headerColor={header.backgroundColor}>
         <QrCode>
           <img src={qrCode}/>
-          <p>Leia-me! &#128512;</p>
+          <p>Leia-me!</p>
         </QrCode>
         <Header />
         <Clock />

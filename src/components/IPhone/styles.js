@@ -55,6 +55,7 @@ export const QrCode = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 
   img {
     margin-top: 20px;
