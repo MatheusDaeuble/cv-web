@@ -48,16 +48,16 @@ const Skills = () => {
 
   return (
     <SectionSkills>
-        <SkillBox margin={5} label='React.js' icon={ReactIcon} />
-        <SkillBox margin={5} label='Python' icon={PythonIcon} />
-        <SkillBox margin={5} label='Typescript' icon={TsIcon} />
-        <SkillBox margin={5} label='Javascript' icon={JavascriptIcon} />
-        <SkillBox margin={5} label='GraphQL' icon={GraphqlIcon} />
-        <SkillBox margin={5} label='Flask' icon={FlaskLogo} />
-        <SkillBox margin={5} label='Node.js' icon={NodeJsIcon} />
-        <SkillBox margin={5} label='HTML5' icon={HtmlIcon} />
-        <SkillBox margin={5} label='CSS3' icon={CssIcon} />
-        <SkillBox margin={5} label='Jest' icon={JestIcon} />
+        <SkillBox margin={4} label='React.js' icon={ReactIcon} />
+        <SkillBox margin={4} label='Python' icon={PythonIcon} />
+        <SkillBox margin={4} label='Typescript' icon={TsIcon} />
+        <SkillBox margin={4} label='Javascript' icon={JavascriptIcon} />
+        <SkillBox margin={4} label='GraphQL' icon={GraphqlIcon} />
+        <SkillBox margin={4} label='Flask' icon={FlaskLogo} />
+        <SkillBox margin={4} label='Node.js' icon={NodeJsIcon} />
+        <SkillBox margin={4} label='HTML5' icon={HtmlIcon} />
+        <SkillBox margin={4} label='CSS3' icon={CssIcon} />
+        <SkillBox margin={4} label='Jest' icon={JestIcon} />
     </SectionSkills>
   );
 };

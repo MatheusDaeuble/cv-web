@@ -8,11 +8,11 @@ export const Container = styled.div`
   padding: 0 10px;
   background-color: ${colors.white};
   flex-direction: column;
-  background-image: -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
     top,
-    ${colors.secondary} 25%,
-    transparent 20%,
-    transparent 50%
+    ${colors.secondary} 16.5%,
+    white 10%,
+    white 50%
   );
 `;
 

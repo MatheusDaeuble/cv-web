@@ -57,14 +57,14 @@ export const QrCode = styled.div`
   justify-content: center;
 
   img {
-    margin-top: 22px;
-    height: 120px;
+    margin-top: 20px;
+    height: 125px;
   }
 
   p {
     color: ${colors.white};
     margin-top: 5px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
   }

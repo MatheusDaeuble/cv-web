@@ -65,7 +65,7 @@ const ComputerContainer = () => (
               <p className='title'>
                 Olá, me chamo <b>Matheus Daeuble!</b>
               </p>
-              <div>
+              <div style={{marginRight: -8}}>
                 <a href='https://github.com/MatheusDaeuble' target='_blank'>
                   <IoLogoGithub size={24} color={colors.dark} />
                 </a>
@@ -99,7 +99,7 @@ const ComputerContainer = () => (
         <CollegeContainer>
           <Title className='title'>Formação Acadêmica:</Title>
           <div className='content'>
-            <div style={{ marginRight: 42 }}>
+            <div style={{ marginRight: 32 }}>
               <p className='period'>Ago 2017 - Jul 2022</p>
               <p className='city'>FORTALEZA</p>
             </div>

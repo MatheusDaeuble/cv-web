@@ -24,6 +24,7 @@ export const CollegeContainer = styled.div`
     font-size: 14px ;
     color: ${colors.dark};
     line-height: 28px;
+    margin-top: -4px;
   }
 
   .status {
@@ -56,13 +57,15 @@ export const Background = styled.div`
   background-color: ${colors.secondary};
   justify-content: space-between;
 
+  .browser-frame__top {
+    padding: 0px 20px 0px 20px;
+  }
+
   .browser-frame {
     background: #e9e9ea;
     padding: 2px;
     padding-bottom: 0px;
     margin-top: -2px;
-    -webkit-filter: opacity(1);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
 
@@ -70,9 +73,7 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   width: 100%;
-  padding: 12px;
-  padding-bottom: 0px;
-  padding-top: 4px;
+  padding: 4px 26px 0px 26px;
   max-width: 1750px;
   border-radius: 5px;
   flex-direction: column;
@@ -122,7 +123,6 @@ export const ProfileContainer = styled.div`
   flex-direction: row;
   background: white;
   border-radius: 10px;
-  -webkit-filter: opacity(1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   img {
@@ -169,7 +169,7 @@ export const ProfileContainer = styled.div`
       justify-content: space-between;
 
       svg {
-        margin-right: 10px;
+        margin-right: 8px;
       }
     }
 
@@ -203,6 +203,8 @@ export const ProfileContainer = styled.div`
   .role {
     color: ${colors.darker};
     font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     /* margin-top: 4px; */
   }
 `;
@@ -238,8 +240,6 @@ export const ProfileContainerOld = styled.div`
   display: flex;
   background: white;
   border-radius: 10px;
-  -webkit-filter: opacity(1);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   img {
     margin-top: -${180 * 0.3}px;

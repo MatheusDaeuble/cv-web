@@ -18,12 +18,7 @@ export const InputContainer = styled.div`
   border-color: ${({ hasError }) =>
     hasError ? colors.danger : colors.lighter};
   border-style: solid;
-  box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
-  -webkit-filter: opacity(1);
 `;
-
-// box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-// rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 
 export const Combination = styled.div`
   display: flex;
@@ -67,6 +62,4 @@ export const IconContainer = styled.div`
   height: 32px;
   width: 32px;
   background-color: ${colors.white};
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 `;

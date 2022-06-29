@@ -43,9 +43,6 @@ export const Container = styled.div`
 export const BalloonContainer = styled.div`
   display: flex;
   z-index: 1;
-  -webkit-filter: opacity(1);
-  box-shadow: rgba(14, 30, 37, 0.18) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.08) 0px 2px 16px 0px;
   align-items: center;
   border-radius: 10px;
   background-color: ${({ status }) => getColor(status)};

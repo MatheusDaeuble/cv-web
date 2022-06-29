@@ -20,8 +20,6 @@ export const TextAreaContainer = styled.div`
   border-color: ${colors.lighter};
   border-style: solid;
   background-color: ${colors.white};
-  -webkit-filter: opacity(1);
-  box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
 `;
 
 export const TextAreaInput = styled.textarea`

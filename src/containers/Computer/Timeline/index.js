@@ -54,7 +54,7 @@ const Timeline = () => {
         period: `2021-2022`,
         description: "Responsável por liderar equipes atribuindo tarefas, repassando conhecimento, buscando adoção de boas práticas para melhoria continua no processo de desenvolvimento e rendimento da equipe.",
         icon: logos.skilopay,
-        skills: [TsIcon, ReactIcon, JestIcon],
+        skills: [TsIcon, ReactIcon, NodeJsIcon, JestIcon],
       },
       {
         role: 'Mobile Development',
@@ -70,7 +70,7 @@ const Timeline = () => {
         period: `2019-2020`,
         description: "Atuei na migração de uma solução de rastreamento de carros que originalmente era um aplicativo nativo para cross-platform, utilizando a tecnologia React Native.",
         icon: logos.nwSoft,
-        skills: [JavascriptIcon,  NodeJsIcon, JestIcon],
+        skills: [JavascriptIcon,  ReactIcon, JestIcon],
       },
       {
         role: 'Full-stack Development',
@@ -95,10 +95,10 @@ const Timeline = () => {
               <Line isVisible={index < experiences.length - 1} />
             </IconContainer>
             <InfoContainer>
-            <div style={{display: 'flex'}}>
-              <Role>{role} - {company}</Role>
+            <p style={{display: 'flex', whiteSpace: 'nowarp'}}>
+              <Role style={{whiteSpace: 'nowarp'}}>{role} - {company}</Role>
               {skills.map((url)=>  <img src={url} style={{height: 20, width: 20, borderRadius: 3 , marginTop: -4, marginLeft: 4}} />)}
-              </div>
+              </p>
               <Period>{description}</Period>
             </InfoContainer>
           </ExperienceRow>
