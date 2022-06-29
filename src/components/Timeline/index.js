@@ -23,10 +23,17 @@ const Timeline = () => {
   const experiences = useMemo(
     () => [
       {
+        id: COMPANY.ITEGRA,
+        role: 'Tech Leader',
+        company: 'Itegra',
+        period: `Mar 2021 - ${t('present')}`,
+        icon: logos.itegra,
+      },
+      {
         id: COMPANY.SKILOPAY,
         role: 'Mobile Development',
         company: 'Skilopay',
-        period: `Jan 2020 - ${t('present')}`,
+        period: `Jan 2020 - Mar 2021`,
         icon: logos.skilopay,
       },
       {
@@ -35,13 +42,6 @@ const Timeline = () => {
         company: 'NwSoft',
         period: `${t('oct')} 2019 - Jan 2020`,
         icon: logos.nwSoft,
-      },
-      {
-        id: COMPANY.ITEGRA,
-        role: 'Full-stack Development',
-        company: 'Itegra',
-        period: `Jul 2017 - ${t('feb')} 2019`,
-        icon: logos.itegra,
       },
       {
         id: COMPANY.ACENS,

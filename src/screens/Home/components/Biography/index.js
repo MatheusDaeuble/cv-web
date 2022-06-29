@@ -39,7 +39,7 @@ const Biography = () => {
       <BioContainer>
         <BioTextContainer>
           <Name>Matheus Daeuble</Name>
-          <Role>Full-stack Development</Role>
+          <Role>Tech Leader</Role>
           {/* <Location>Fortaleza, Brasil</Location> */}
           <IconsContainer>
           <a href='https://github.com/MatheusDaeuble' target='_blank'>
