@@ -58,7 +58,7 @@ export const Background = styled.div`
   justify-content: space-between;
 
   .browser-frame__top {
-    padding: 0px 20px 0px 20px;
+    padding: 0px 32px 0px 32px;
   }
 
   .browser-frame {
@@ -73,7 +73,7 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   width: 100%;
-  padding: 4px 26px 0px 26px;
+  padding: 4px 26px 40px 26px;
   max-width: 1750px;
   border-radius: 5px;
   flex-direction: column;

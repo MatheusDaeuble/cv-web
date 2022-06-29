@@ -2,7 +2,7 @@
 import React from 'react';
 import { GrGithub, GrInstagram, GrLinkedin, GrFacebook } from 'react-icons/gr';
 import { useTranslation } from 'react-i18next';
-import avatar from '~/assets/avatar.png';
+import avatar from '~/assets/avatar.jpeg';
 
 import { colors } from '~/styles';
 

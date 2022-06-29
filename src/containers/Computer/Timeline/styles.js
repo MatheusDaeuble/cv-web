@@ -3,7 +3,7 @@ import { colors } from '~/styles';
 
 export const Role = styled.div`
   position: relative;
-  color: ${colors.darker};
+  color: ${colors.darkest};
   font-size: 15px;
   margin-top: -4px;
   margin-right: 2px;
@@ -36,6 +36,7 @@ export const ExperienceRow = styled.div`
     min-width: 75px;
     max-width: 75px;
     text-align: end;
+    color: ${colors.darkest};
   }
 `;
 

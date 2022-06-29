@@ -1,6 +1,6 @@
 import React from 'react';
 import BrowserFrame from 'react-browser-frame';
-import avatar from '~/assets/avatar.png';
+import avatar from '~/assets/avatar.jpeg';
 import TimeLine from './Timeline';
 import Skills from './Skills';
 import { colors } from '~/styles';
